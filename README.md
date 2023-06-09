@@ -21,16 +21,16 @@ The following variables are needed at the **settings.py** of your project.
 
 | **Varaiable** | **Description**                                                                                                 | **Example**                                                              |
 | ------------- |-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| ``COGNITO_USER_POOL_ID`` | User pool ID of your AWS Cognito setup                                                                          | ``eu-west-XXXXXXXX``                                                     |
-| ``COGNITO_CLIENT_ID``          | Client ID of your AWS Cognito setup                                                                             | ``2vvdsdfr243rwefsdde55edr``                                             |
-| ``COGNITO_APP_CLIENT_SECRET``   | Client Secret of AWS Cognito setup                                                                              | ``1urj4uktvlmb0ppsdf234rwefd6io8tipmrlu3se13fdssdf``                     |
-| ``COGNITO_TOKEN_URL`` | The Token URL of your AWS Cognito setup                                                                         | ``https://<xxxxxxxxxx>.auth.<eu-west-2>.amazoncognito.com/oauth2/token`` |
-| ``COGNIT_CALLBACK_URL_PATH`` | Call back path redirected from AWS Cognito                                                                      | ``some-end-point/api/cognito/userpool/callback/``                        |
-| ``COGNITO_REDIRECT_URL`` | Add some random delay of 1 to 30 seconds for each HTTP requests. Disable by default.                            | ``false``                                                                |
-| ``COGNITO_HOST`` | The host of your AWS Cognito setup                                                                              | ``django_ses.SESBackend``                                                |
-| ``COGNITO_USERPOOL_REGION`` | Default AWS Cognito region Name                                                                                 | ``us-west-2``                                                            |
-| ``COGNITO_AUTH_SUCCESS_REDIRECT_URL`` | URL or Django URL route name of redirection upon success, after obtaining the ``access_token`` and ``id_token`` | ``email.us-west-2.amazonaws.com``                                        |
-| ``COGNITO_AUTH_ERROR_REDIRECT_URL`` | URL or Django URL route name of redirection upon error                                                          |                                                                          |
+| ``COGNITO_USER_POOL_ID`` | User pool ID of your AWS Cognito setup                                                                          | ``"eu-west-XXXXXXXX"``                                                   |
+| ``COGNITO_CLIENT_ID``          | Client ID of your AWS Cognito setup                                                                             | ``"2vvdsdfr243rwefswe445rte5edr"``                                       |
+| ``COGNITO_APP_CLIENT_SECRET``   | Client Secret of AWS Cognito setup                                                                              | ``1urj4uktvlmb0pps234234d6io8tipmrlu3se13fdssdf``                        |
+| ``COGNITO_TOKEN_URL`` | The Token URL of your AWS Cognito setup                                                                         | ``"https://<xxxxxxxxxx>.auth.<eu-west-2>.amazoncognito.com/oauth2/token"`` |
+| ``COGNIT_CALLBACK_URL_PATH`` | Call back path redirected from AWS Cognito                                                                      | ``"some-folder-of-your-choice/api/cognito/userpool/callback/"``          |
+| ``COGNITO_REDIRECT_URL`` | Add some random delay of 1 to 30 seconds for each HTTP requests. Disable by default.                            | ``f"http://localhost:8000/{COGNIT_CALLBACK_URL_PATH}"``                  |
+| ``COGNITO_HOST`` | The host of your AWS Cognito setup                                                                              | ``"<xxxxxxxxxx>.auth.<eu-west-2>.amazoncognito.com"``                    |
+| ``COGNITO_USERPOOL_REGION`` | Default AWS Cognito region Name                                                                                 | ``"us-west-2"``                                                          |
+| ``COGNITO_AUTH_SUCCESS_REDIRECT_URL`` | URL or Django URL route name of redirection upon success, after obtaining the ``access_token`` and ``id_token`` | ``"landing:index"``                                                      |
+| ``COGNITO_AUTH_ERROR_REDIRECT_URL`` | URL or Django URL route name of redirection upon error                                                          | ``"landing:error"``                                                      |
 | ``COGNITO_PUBLIC_KEYS_CACHE_TIMEOUT`` | Cache time of the public keys of your AWS Cognito setup                                                         | ``300``                                                                  |
 
 ---
@@ -39,6 +39,12 @@ The following variables are needed at the **settings.py** of your project.
 
 ### Python packages dependencies
 
+* __awslabs/aws-support-tools__  
+  Decode and verify Amazon Cognito JWT tokens
+  Copyright (c) Amazon Web Services - Labs
+  Apache-2.0 license
+  https://github.com/awslabs/aws-support-tools/tree/master/Cognito/decode-verify-jwt
+
 * __Django__  
   Copyright (c) Django Software Foundation and individual contributors.   
   All rights reserved.   
@@ -46,7 +52,7 @@ The following variables are needed at the **settings.py** of your project.
 
 
 * __Requests__  
-  Kenneth Reitz & Python Software Foundation
+  Copyright (c) Kenneth Reitz & Python Software Foundation
   Apache-2.0 license
   https://github.com/psf/requests
 

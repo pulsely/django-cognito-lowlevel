@@ -4,6 +4,8 @@
 
 This package does not make any attempts at integrating with the Django user system directly. Handler for your callback function is provided for your own workflow customizations.
 
+An example implementation is available at [django-cognito-lowlevel-example](https://github.com/pulsely/django-cognito-lowlevel-example/tree/main).
+
 ---
 
 ## Installation of django-cognito-lowlevel
@@ -32,6 +34,12 @@ The following variables are needed at the **settings.py** of your project.
 | `COGNITO_AUTH_SUCCESS_REDIRECT_URL` | URL or Django URL route name of redirection upon success, after obtaining the `access_token` and `id_token`. <br />e.g. `"landing:index"`            |
 | `COGNITO_AUTH_ERROR_REDIRECT_URL`   | URL or Django URL route name of redirection upon error. <br />e.g.`"landing:error"`                                                                  |
 | `COGNITO_PUBLIC_KEYS_CACHE_TIMEOUT` | Cache time of the public keys of your AWS Cognito setup. <br />e.g.`300`                                                                             |
+
+---
+
+# Example implementation
+
+Please refer to the [django-cognito-lowlevel-example](https://github.com/pulsely/django-cognito-lowlevel-example/tree/main) project.
 
 ---
 

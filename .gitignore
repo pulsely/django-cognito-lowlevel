@@ -81,4 +81,5 @@ src/webpack/node_modules/*
 venv/*
 .env
 .idea/*
+cognitolowlevel/.idea/*
 dist/*

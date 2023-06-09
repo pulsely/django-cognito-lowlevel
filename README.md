@@ -43,6 +43,14 @@ Please refer to the [django-cognito-lowlevel-example](https://github.com/pulsely
 
 ---
 
+## License
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+---
+
 # Credits & Acknowledgements
 
 ### Python packages dependencies
@@ -73,10 +81,3 @@ Please refer to the [django-cognito-lowlevel-example](https://github.com/pulsely
   MIT license
   https://github.com/mpdavis/python-jose
 
----
-
-## License
-
-Apache License
-Version 2.0, January 2004
-http://www.apache.org/licenses/

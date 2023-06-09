@@ -49,8 +49,8 @@ Please refer to the [django-cognito-lowlevel-example](https://github.com/pulsely
 
 - **awslabs/aws-support-tools**  
   Decode and verify Amazon Cognito JWT tokens  
-  Copyright (c) Amazon Web Services - Labs
-  Apache-2.0 license
+  Copyright (c) Amazon Web Services - Labs  
+  Apache-2.0 license  
   https://github.com/awslabs/aws-support-tools/tree/master/Cognito/decode-verify-jwt
 
 - **Django**  
@@ -59,18 +59,18 @@ Please refer to the [django-cognito-lowlevel-example](https://github.com/pulsely
   https://www.djangoproject.com/
 
 - **Requests**  
-  Copyright (c) Kenneth Reitz & Python Software Foundation
-  Apache-2.0 license
+  Copyright (c) Kenneth Reitz & Python Software Foundation  
+  Apache-2.0 license  
   https://github.com/psf/requests
 
 - **colorama**  
-  Copyright Jonathan Hartley & Arnon Yaari, 2013-2020.
-  BSD-3-Clause license
+  Copyright Jonathan Hartley & Arnon Yaari, 2013-2020.  
+  BSD-3-Clause license  
   https://github.com/tartley/colorama
 
 - **python-jose**  
-  Copyright (c) Michael Davis
-  MIT license
+  Copyright (c) Michael Davis  
+  MIT license  
   https://github.com/mpdavis/python-jose
 
 **django-cognito-lowlevel** is written by Pulsely https://www.pulsely.com/  

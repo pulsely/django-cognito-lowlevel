@@ -83,3 +83,5 @@ venv/*
 .idea/*
 cognitolowlevel/.idea/*
 dist/*
+Makefile
+pyproject.toml

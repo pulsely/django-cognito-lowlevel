@@ -10,7 +10,7 @@ An example implementation is available at [django-cognito-lowlevel-example](http
 
 ## Installation of django-cognito-lowlevel
 
-You can integrate **django-cognito-lowlevel** with your Django project using a Python virtual environment
+You can integrate **django-cognito-lowlevel** with your Django project using a Python virtual environment.  
 Please use pip to install at your Python virtual environment:
 
 `pip install django-cognito-lowlevel`

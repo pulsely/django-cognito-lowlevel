@@ -50,7 +50,6 @@ The following variables are needed at the **settings.py** of your project.
   All rights reserved.   
   https://www.djangoproject.com/
 
-
 * __Requests__  
   Copyright (c) Kenneth Reitz & Python Software Foundation
   Apache-2.0 license
